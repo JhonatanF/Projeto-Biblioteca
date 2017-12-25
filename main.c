@@ -5,8 +5,9 @@
 #include "menu_principal.c"
 #include "alunos.h"
 #include "acervo.h"
+#include "emprestimos.h"
 
-main() {
+main(){
     int i,j, op;
     menuCIMA(116);
     printf("                                ...:::::  BIBLIOTECA CENTRAL DA UEPB ! :::::... ");
@@ -37,7 +38,7 @@ main() {
             op_acervo();
             break;
         case 3:
-            printf("Emprestimos\n\n");
+            op_emprestimos();
             break;
         case 4:
             printf("\n\n\t\tObrigado por usar nosso sistema!\n\n");
