@@ -231,6 +231,7 @@ void alterarAlunos() {
                 printf("\nDigite o Novo Nome: ");
                 fflush(stdin);
                 fgets(al.nome, 50, stdin);
+                strupr(al.nome);
                 //O novo nome que foi digitado vai receber um \0 para indicar o fim
                 al.nome[strlen(al.nome) - 1] = '\0';
                 //vou para a posicao no arquivo que eu quero incluir os novos dados
